@@ -29,9 +29,9 @@ English | [简体中文](./README.zh-CN.md)
 
 ## Introduction
 
-[Vue-Hotspot](https://github.com/cn-wx/vue-hotspot) is an image hotspot component for Vue.js.
+[Vue-Hotspot-Ets](https://github.com/ets-company/vue-hotspot-ets) is an image hotspot component for Vue.js.
+Extended from Vue-Hotspot
 
-* [Live Demo](https://cn-wx.github.io/vue-hotspot/)
 
 ## Installation
 

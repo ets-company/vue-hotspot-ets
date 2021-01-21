@@ -29,9 +29,8 @@
 
 ## 简介
 
-[Vue-Hotspot](https://github.com/cn-wx/vue-hotspot) 是一个基于Vue.js的图片热点组件。
-
-* [在线预览](https://cn-wx.github.io/vue-hotspot/)
+[Vue-Hotspot-Ets](https://github.com/ets-company/vue-hotspot-ets) 是一个基于Vue.js的图片热点组件。
+Extended from Vue-Hotspot
 
 ## 安装
 
