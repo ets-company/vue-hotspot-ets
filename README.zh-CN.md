@@ -172,7 +172,3 @@ $ npm run serve
 ```
 
 打开 `http://localhost:8080/` 来查看例子。
-
-# 版权说明
-
-Vue-hotspot 组件的证书是 [MIT 证书](https://github.com/cn-wx/vue-hotspot/blob/master/LICENSE)

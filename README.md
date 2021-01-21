@@ -173,7 +173,3 @@ $ npm run serve
 ```
 
 Open `http://localhost:8080/` to see the demo.
-
-# License
-
-Vue-hotspot component is delivered under the [MIT License](https://github.com/cn-wx/vue-hotspot/blob/master/LICENSE)
