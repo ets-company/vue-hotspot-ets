@@ -1,0 +1,66 @@
+{
+  "name": "vue-hotspot-ets",
+  "version": "1.0.0",
+  "description": "Hotspot component for Vue.js. Inspired by vue-hotspot",
+  "author": "ETS",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service build",
+    "pub": "sh ./publish.sh",
+    "test:unit": "vue-cli-service test:unit --coverage && codecov",
+    "test": "vue-cli-service test:unit --coverage"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "main": "dist/vue-hotspot-ets.js",
+  "module": "components/VueHotspotEts.vue",
+  "dependencies": {
+    "@vue/composition-api": "^0.3.2",
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.11.0",
+    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-unit-jest": "^4.0.5",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^25.0.0",
+    "codecov": "^3.5.0",
+    "cross-env": "^5.2.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "rollup": "^1.20.3",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.3",
+    "rollup-plugin-vue": "^5.0.1",
+    "standard": "^14.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "bugs": {
+    "url": "https://github.com/cn-wx/vue-hotspot/issues"
+  },
+  "homepage": "https://github.com/cn-wx/vue-hotspot#readme",
+  "keywords": [
+    "vue",
+    "hotspot",
+    "component"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cn-wx/vue-hotspot.git"
+  }
+}
