@@ -164,6 +164,8 @@ You can see more examples [here](https://cn-wx.github.io/vue-hotspot/).
 | textColor       | background color for hotspot text                                                                                                                 |   false  |                 'rgb(53, 73, 94)'                   |
 | opacity         | opacity for hotspots                                                                                                                              |   false  |                         0.8                         |
 | overlayText     | text for overlay in edit mode                                                                                                                     |   false  |    'Please Click The Image To Add Hotspots.'        |
+| isDeletable | If hotspot deletable | false |
+| needDescription | Allows to remove description from hotspot | false |
 
 ## Local development
 
