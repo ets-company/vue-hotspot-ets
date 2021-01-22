@@ -50,17 +50,18 @@
     "vue-template-compiler": "^2.6.10"
   },
   "bugs": {
-    "url": "https://github.com/cn-wx/vue-hotspot/issues"
+    "url": "https://github.com/ets-company/vue-hotspot-ets/issues"
   },
-  "homepage": "https://github.com/cn-wx/vue-hotspot#readme",
+  "homepage": "https://github.com/ets-company/vue-hotspot-ets#readme",
   "keywords": [
     "vue",
     "hotspot",
-    "component"
+    "component",
+    "ets"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cn-wx/vue-hotspot.git"
+    "url": "git+https://github.com/ets-company/vue-hotspot-ets.git"
   }
 }

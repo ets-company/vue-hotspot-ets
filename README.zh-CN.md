@@ -37,13 +37,13 @@ Extended from Vue-Hotspot
 ### npm (推荐方式)
 
 ```bash
-$ npm install vue-hotspot --save
+$ npm install vue-hotspot-ets --save
 ```
 
 ### yarn
 
 ```
-$ yarn add vue-hotspot
+$ yarn add vue-hotspot-ets
 ```
 
 ## 使用方法
@@ -52,7 +52,7 @@ $ yarn add vue-hotspot
 
 ```js
 import Vue from 'vue'
-import VueHotspot from 'vue-hotspot' // 在 webpack 环境下指向 components/VueHotspot.vue
+import VueHotspotEts from 'vue-hotspot-ets' // 在 webpack 环境下指向 components/VueHotspot.vue
 ```
 
 ## 调用组件

@@ -38,13 +38,13 @@ Extended from Vue-Hotspot
 ### npm (Recommended)
 
 ```bash
-$ npm install vue-hotspot --save
+$ npm install vue-hotspot-ets --save
 ```
 
 ### yarn
 
 ```
-$ yarn add vue-hotspot
+$ yarn add vue-hotspot-ets
 ```
 
 ## Usage
@@ -68,7 +68,7 @@ import VueHotspotEts from 'vue-hotspot-ets' // refers to components/VueHotspot.v
 
 <script>
 import Vue from 'vue'
-import VueHotspot from 'vue-hotspot'
+import VueHotspotEts from 'vue-hotspot-ets'
 export default {
   components: {
     'v-hotspot': VueHotspotEts
@@ -128,7 +128,7 @@ You can see more examples [here](https://cn-wx.github.io/vue-hotspot/).
 ├── rollup.config.js            // rollup config
 ├── src                         // folder, src folder
 │   ├── components              // folder, main folder
-│   │   ├── VueHotspot.vue      // entry file
+│   │   ├── VueHotspotEts.vue      // entry file
 │   │   ├── module              // folder, module folder
 │   │   │   ├── ControlBox.vue
 │   │   │   └── DataPoint.vue
