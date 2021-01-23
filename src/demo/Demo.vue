@@ -13,6 +13,7 @@
         <!-- Main -->
         <v-hotspot
           :init-options="item"
+          @add-hotspot="addHotspot"
           @save-data="saveData"
           @hotspot-click="hotspotClick"
           @after-delete="afterDelete"
@@ -114,6 +115,9 @@ export default {
     },
     hotspotEdit (hotspot) {
       console.log(hotspot)
+    },
+    addHotspot (hotspot) {
+      console.log('Added hotspot', hotspot)
     }
   }
 }

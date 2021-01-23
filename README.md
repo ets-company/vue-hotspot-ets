@@ -62,8 +62,12 @@ import VueHotspotEts from 'vue-hotspot-ets' // refers to components/VueHotspot.v
 <template>
   <v-hotspot
     :init-options="hotspotConfig"
+    @add-hotspot="addHotspot"
     @save-data="saveData"
-    @after-delete="afterDelete" />
+    @hotspot-click="hotspotClick"
+    @after-delete="afterDelete"
+    @delete-hotspot="hotspotDelete"
+    @edit-hotspot="hotspotEdit"/>
 </template>
 
 <script>
@@ -91,13 +95,29 @@ export default {
     }
   },
   methods: {
+    changeEditable (conf) {
+      if (!conf) return
+      conf.editable = !conf.editable
+    },
     saveData (data) {
-      // Do something with the list of hotspots
+      // A list of hotspots
       console.log(data)
     },
     afterDelete () {
       // Do something after delete
       console.log('Do something after delete ...')
+    },
+    hotspotClick () {
+      console.log('Do something after click ...')
+    },
+    hotspotDelete (hotspot) {
+      console.log(hotspot)
+    },
+    hotspotEdit (hotspot) {
+      console.log(hotspot)
+    },
+    addHotspot (hotspot) {
+      console.log('Added hotspot', hotspot)
     }
   }
 }

@@ -61,8 +61,12 @@ import VueHotspotEts from 'vue-hotspot-ets' // 在 webpack 环境下指向 compo
 <template>
   <v-hotspot
     :init-options="hotspotConfig"
+    @add-hotspot="addHotspot"
     @save-data="saveData"
-    @after-delete="afterDelete" />
+    @hotspot-click="hotspotClick"
+    @after-delete="afterDelete"
+    @delete-hotspot="hotspotDelete"
+    @edit-hotspot="hotspotEdit"/>
 </template>
 
 <script>
@@ -90,13 +94,29 @@ export default {
     }
   },
   methods: {
+    changeEditable (conf) {
+      if (!conf) return
+      conf.editable = !conf.editable
+    },
     saveData (data) {
-      // 保存所有热点后的回调事件
+      // A list of hotspots
       console.log(data)
     },
     afterDelete () {
-      // 删除所有热点后的回调事件
+      // Do something after delete
       console.log('Do something after delete ...')
+    },
+    hotspotClick () {
+      console.log('Do something after click ...')
+    },
+    hotspotDelete (hotspot) {
+      console.log(hotspot)
+    },
+    hotspotEdit (hotspot) {
+      console.log(hotspot)
+    },
+    addHotspot (hotspot) {
+      console.log('Added hotspot', hotspot)
     }
   }
 }
