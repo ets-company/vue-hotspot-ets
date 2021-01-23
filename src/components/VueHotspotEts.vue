@@ -159,7 +159,7 @@ export default createComponent({
       }
       hotspot.id = '_' + Math.random().toString(36).substr(2, 9)
       unWrappedConfig.data.push(hotspot)
-      this.$emit('add-hotspot', hotspot)
+      emit('add-hotspot', hotspot)
     }
 
     function resizeOverlay () {
