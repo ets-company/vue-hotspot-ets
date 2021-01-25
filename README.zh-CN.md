@@ -185,6 +185,7 @@ export default {
 | overlayText     | 编辑模式下的覆盖层的文字                                                                                                |    否    | 'Please Click The Image To Add Hotspots.'  |
 | isDeletable | If hotspot deletable | false | false
 | needDescription | Allows to remove description from hotspot | false | false
+| displayControlBox | Allows to display/remove control box | false | true
 
 ## 本地开发
 

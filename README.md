@@ -186,6 +186,7 @@ You can see more examples [here](https://cn-wx.github.io/vue-hotspot/).
 | overlayText     | text for overlay in edit mode                                                                                                                     |   false  |    'Please Click The Image To Add Hotspots.'        |
 | isDeletable | If hotspot deletable | false | false
 | needDescription | Allows to remove description from hotspot | false | false
+| displayControlBox | Allows to display/remove control box | false | true
 
 ## Local development
 

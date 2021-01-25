@@ -29,6 +29,7 @@
     />
     <!-- ControlBox -->
     <ControlBox
+      v-if="config.displayControlBox"
       :config="config"
       @save-data="saveAllHotspots"
       @after-delete="removeAllHotspots"
@@ -104,7 +105,8 @@ export default createComponent({
           'property': 'Message',
           'default': 'This is a Vue Hotspot Component which lets you create hotspot. '
         }
-      ]
+      ],
+      displayControlBox: true
     })
     const config = ref(null)
     const imageLoaded = ref(false)

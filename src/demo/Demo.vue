@@ -54,7 +54,8 @@ export default {
           editable: true,
           interactivity: 'hover',
           isDeletable: true,
-          needDescription: false
+          needDescription: false,
+          displayControlBox: false
         },
         {
           image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601580666609&di=ff8e74e0fb64975b30308f0fc4e6bd4e&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2F100ghk1433p0arl5c3A3B.jpg',
