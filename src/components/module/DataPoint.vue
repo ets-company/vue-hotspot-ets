@@ -2,9 +2,9 @@
   <div class="ui__vue_hotspot_hotspot"
     :style="`top: ${positionTop}; left: ${positionLeft}; background-color: ${hotspotColor};`"
     :class="isActive || interactivity === 'none' ? 'active' : ''"
-    @mouseenter="interactivity === 'hover' ? isActive=true : null"
-    @mouseleave="interactivity === 'hover' ? isActive=false : null"
-    @click="interactivity === 'click' ? toggleActive() : null">
+    @mouseenter="(interactivity === 'hover' || interactivity === 'both') ? isActive=true : null"
+    @mouseleave="(interactivity === 'hover' || interactivity === 'both') ? isActive=false : null"
+    @click="(interactivity === 'click' || interactivity === 'both') ? toggleActive() : null">
     <!-- message box -->
     <div :style="`color:${textColor}`">
       <div

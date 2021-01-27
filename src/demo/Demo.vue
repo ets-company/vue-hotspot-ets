@@ -52,7 +52,7 @@ export default {
         {
           image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601580666603&di=81d64069e781bea52d8595089ed8aea4&imgtype=0&src=http%3A%2F%2Fyouimg1.c-ctrip.com%2Ftarget%2Ftg%2F154%2F775%2F815%2Faea886e20493478a9c2f628d86e34cfc.jpg',
           editable: true,
-          interactivity: 'hover',
+          interactivity: 'both',
           isDeletable: true,
           needDescription: false,
           displayControlBox: false
