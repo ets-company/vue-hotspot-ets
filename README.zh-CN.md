@@ -177,7 +177,7 @@ export default {
 | image           | 背景图片                                                                                                              | 是       | 一张带有'Oops! image not found...'字的图片 |
 | data            | 存放热点的数据.<br>数据结构: `[ Message: 'String', Title: 'String, x: Float, y: Float' ]`                             |    否    |                     []                     |
 | editable        | 指定要在其中使用插件的可编辑项。<br>`true`: 用户可以通过组件UI创建新的热点。<br>`false`: 组件从`data`对象中读取数据。 |    否    |                    true                    |
-| interactivity   | 显示热点的条件事件，可允许设置值: `click`, `hover`, `none`                                                            |    否    |                    hover                   |
+| interactivity   | 显示热点的条件事件，可允许设置值: `click`, `hover`, `both`, `none`                                                            |    否    |                    hover                   |
 | hotspotColor    | 热点的颜色                                                                                                            |    否    |             'rgb(66, 184, 131)'            |
 | messageBoxColor | 热点消息框的颜色                                                                                                      |    否    |            'rgb(255, 255, 255)'            |
 | textColor       | 热点消息框中字的颜色                                                                                                  |    否    |              'rgb(53, 73, 94)'             |
