@@ -260,4 +260,21 @@ span.ui__vue_hotspot_overlay > p {
   padding: 20px;
   text-align: center;
 }
+.ui__vue_hotspot_hotspot > div > .ui__vue_hotspot_title > .ui_vue_remove_hotspot {
+  background-color: transparent !important;
+}
+.ui__vue_hotspot_hotspot > div > .ui__vue_hotspot_title > .ui_vue_remove_hotspot img {
+  height: 10px;
+  font-size: 10px;
+}
+.ui__vue_hotspot_hotspot > div > .ui__vue_hotspot_title {
+  color: #fff !important;
+  background: #000 !important;
+  opacity: 1 !important;
+  text-align: left;
+}
+.ui__vue_hotspot_hotspot > div {
+  color: rgb(53, 73, 94);
+  background: #444
+}
 </style>

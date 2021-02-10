@@ -14,7 +14,9 @@
           opacity: ${opacity}`"
       >
         {{ hotspot['Title'] }}
-        <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot">X</b>
+        <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot">
+          <img src="../../assets/images/close-button.png">
+        </b>
       </div>
       <div
       v-if="config.needDescription === true || config.hasOwnProperty('needDescription') === false"
