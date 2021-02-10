@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production rollup -c",
     "lint": "vue-cli-service lint",
     "demo": "vue-cli-service build",
-    "pub": "sh ./publish.sh",
+    "pub": "npm version patch --force && npm publish",
     "test:unit": "vue-cli-service test:unit --coverage && codecov",
     "test": "vue-cli-service test:unit --coverage"
   },
