@@ -8,6 +8,7 @@ const buble = require('rollup-plugin-buble')
 const { terser } = require('rollup-plugin-terser')
 const resolve = require('rollup-plugin-node-resolve')
 const commonjs = require('rollup-plugin-commonjs')
+const url = require('rollup-plugin-url')
 
 export default {
   input: 'src/components/VueHotspotEts.vue',
@@ -25,6 +26,11 @@ export default {
     '@vue/composition-api'
   ],
   plugins: [
+    url({
+      limit: 10 * 1024, // inline files < 10k, copy files > 10k
+      include: ["**/*.png"], // defaults to .svg, .png, .jpg and .gif files
+      emitFiles: true // defaults to true
+    }),
     resolve(),
     commonjs(),
     vue({
