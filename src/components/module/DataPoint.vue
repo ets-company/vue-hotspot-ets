@@ -8,12 +8,12 @@
     <!-- message box -->
     <div :style="`color:${textColor}`">
       <div
-        :class="{'ui__vue_hotspot_message': config.hasOwnProperty('needDescription'), 'ui__vue_hotspot_title': config.needDescription === true || config.hasOwnProperty('needDescription') === false}"
+        class="ui__vue_hotspot_title"
         :style="`
           background: ${messageBoxColor};
           opacity: ${opacity}`"
       >
-        {{ hotspot['Title'] }}
+        <span>{{ hotspot['Title'] }} </span>
         <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot">
           <img src="../../assets/images/close-button.png">
         </b>
@@ -26,6 +26,7 @@
           opacity: ${opacity}`"
       >
         {{ hotspot['Message'] }}
+        <div style="height: 30px;opacity: 0"> </div>
       </div>
     </div>
   </div>
