@@ -13,10 +13,10 @@
           background: ${messageBoxColor};
           opacity: ${opacity}`"
       >
-        <span>{{ hotspot['Title'] }} </span>
         <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot">
           <img src="../../assets/images/close-button.png">
         </b>
+        <span>{{ hotspot['Title'] }} </span>
       </div>
       <div
       v-if="config.needDescription === true || config.hasOwnProperty('needDescription') === false"
