@@ -275,9 +275,6 @@ span.ui__vue_hotspot_overlay > p {
 .ui__vue_hotspot_hotspot > div > .ui__vue_hotspot_message {
   margin-top: 0 !important;
 }
-.ui__vue_hotspot_hotspot.active > div[data-v-ff2182da]:before {
-  border-left-color: #000 !important;
-}
 /*
 .ui__vue_hotspot_hotspot > div > .ui__vue_hotspot_title {
   color: #fff !important;
@@ -289,4 +286,11 @@ span.ui__vue_hotspot_overlay > p {
   color: rgb(53, 73, 94);
   background: #444
 }*/
+.ui__vue_hotspot_hotspot.active>div:before {
+  border-left-color: #000 !important;
+}
+.ui__vue_hotspot_hotspot.active>div {
+  background: #000 !important;
+}
+
 </style>
