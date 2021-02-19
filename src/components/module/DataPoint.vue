@@ -13,7 +13,7 @@
           background: ${messageBoxColor};
           opacity: ${opacity}`"
       >
-        <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot">
+        <b class="ui_vue_remove_hotspot" @click.stop="deleteHotspot" v-if="isDeletable">
           <img src="../../assets/images/close-button.png">
         </b>
         <span>{{ hotspot['Title'] }} </span>
@@ -62,7 +62,8 @@ export default createComponent({
       interactivity: computed(() => props.config && props.config.interactivity),
       textColor: computed(() => props.config && props.config.textColor),
       messageBoxColor: computed(() => props.config && props.config.messageBoxColor),
-      opacity: computed(() => props.config && props.config.opacity)
+      opacity: computed(() => props.config && props.config.opacity),
+      isDeletable: computed(() => props.config && props.config.isDeletable)
     })
 
     watch(() => props.imageLoaded, (loaded, prev) => {

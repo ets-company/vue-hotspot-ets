@@ -106,7 +106,8 @@ export default createComponent({
           'default': 'This is a Vue Hotspot Component which lets you create hotspot. '
         }
       ],
-      displayControlBox: true
+      displayControlBox: true,
+      isDeletable: true
     })
     const config = ref(null)
     const imageLoaded = ref(false)
