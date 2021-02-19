@@ -23,7 +23,7 @@
       :imageLoaded="imageLoaded"
       :vueHotspotBackgroundImage="vueHotspotBackgroundImage"
       :vueHotspot="vueHotspot"
-      @hotspot-click="$emit('hotspot-click')"
+      @hotspot-click="$emit('hotspot-click', $event)"
       @delete-hotspot="deleteHotspot"
       @edit-hotspot="editHotspot"
     />
@@ -107,7 +107,8 @@ export default createComponent({
         }
       ],
       displayControlBox: true,
-      isDeletable: true
+      isDeletable: false,
+      hotspotEditable: true
     })
     const config = ref(null)
     const imageLoaded = ref(false)
@@ -203,12 +204,15 @@ export default createComponent({
     }
 
     function editHotspot (hotspotData) {
-      const fill = prompt(`Please enter title`, hotspotData.Title)
-      if (fill === null) {
-        return
+      debugger
+      if (config.value.hotspotEditable) {
+        const fill = prompt(`Please enter title`, hotspotData.Title)
+        if (fill === null) {
+          return
+        }
+        hotspotData['Title'] = fill
+        emit('edit-hotspot', hotspotData)
       }
-      hotspotData['Title'] = fill
-      emit('edit-hotspot', hotspotData)
     }
 
     return {

@@ -76,7 +76,8 @@ export default {
           hotspotColor: '#85ce61',
           messageBoxColor: '#409eff',
           textColor: '#333',
-          isDeletable: true
+          isDeletable: true,
+          hotspotEditable: false
         },
         {
           image: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1601581275905&di=a277ae5fe6229862e01e0d1af57404f1&imgtype=0&src=http%3A%2F%2Fpic.rmb.bdstatic.com%2Fa2aa78b5e58cefb983dc2b9ea0ff9910.jpeg',
@@ -108,8 +109,8 @@ export default {
       // Do something after delete
       console.log('Do something after delete ...')
     },
-    hotspotClick () {
-      console.log('Do something after click ...')
+    hotspotClick (e) {
+      console.log('Do something after click ...', e)
     },
     hotspotDelete (hotspot) {
       console.log(hotspot)

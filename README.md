@@ -187,6 +187,7 @@ You can see more examples [here](https://cn-wx.github.io/vue-hotspot/).
 | isDeletable | If hotspot deletable | false | false
 | needDescription | Allows to remove description from hotspot | false | false
 | displayControlBox | Allows to display/remove control box | false | true
+| hotspotEditable | Allow to edit hotspot on click | false | true
 
 ## Local development
 

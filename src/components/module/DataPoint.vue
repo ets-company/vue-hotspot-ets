@@ -87,7 +87,7 @@ export default createComponent({
 
     function toggleActive () {
       isActive.value = !isActive.value
-      emit('hotspot-click')
+      emit('hotspot-click', props.hotspot)
       editHotspot()
     }
 
