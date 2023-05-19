@@ -1,6 +1,6 @@
 {
   "name": "vue-hotspot-ets",
-  "version": "1.0.12",
+  "version": "1.1.0",
   "description": "Hotspot component for Vue.js. Inspired by vue-hotspot",
   "author": "ETS",
   "scripts": {
